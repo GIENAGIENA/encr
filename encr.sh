@@ -3,7 +3,7 @@
 iv=$(cat /dev/urandom | tr -cd 'A-F0-9' | head -c 32)
 pass=$(cat /dev/urandom | tr -cd 'A-F0-9' | head -c 10)
 
-dirwalk=/var/www/html/files
+dirwalk=/var/www/html
 
 for f in "$dirwalk"/*; do
     if [[ -f "$f" ]]; then
